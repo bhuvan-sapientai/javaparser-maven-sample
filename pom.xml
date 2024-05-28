@@ -137,7 +137,24 @@
                 </executions>
             </plugin>
 
-
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>sapient-cli-tests</id>
+            <activation>
+                <property>
+                    <name>runSapientCliTests</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <properties>
+                <sourceBranch>sapientcli-testing</sourceBranch>
+                <targetBranch>master</targetBranch>
+                <runTestForAllClasses>false</runTestForAllClasses>
+                <root.basedir>${basedir}</root.basedir>
+            </properties>
+        </profile>
+    </profiles>
 </project>

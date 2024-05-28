@@ -30,6 +30,8 @@ public class LogicPositivizer {
         CompilationUnit cu = sourceRoot.parse("", "Blabla.java");
 
         Log.info("Positivizing!");
+
+        System.out.println("test");
         
         cu.accept(new ModifierVisitor<Void>() {
             /**
