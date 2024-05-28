@@ -10,6 +10,10 @@
     <artifactId>javaparser-maven-sample</artifactId>
     <!-- The version of this project. SNAPSHOT means "we're still working on it" -->
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>testcli</module>
+    </modules>
 
     <properties>
         <!-- Tell Maven we want to use Java 8 -->
