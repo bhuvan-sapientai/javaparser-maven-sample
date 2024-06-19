@@ -1,0 +1,84 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.floats.ArithmeticRemainder"
+methods:
+- method:
+    name: "getRemainder"
+    sourceCodeSignature: "float getRemainder(float a, float b)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    instructionFingerprint: "4F60367AA785A41C9A9561A1F6C8DB73"
+  paths:
+  - testPathName: "getRemainderTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.floats.ArithmeticRemainder"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.floats.ArithmeticRemainder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "fixedRemainder"
+    sourceCodeSignature: "float fixedRemainder()"
+    returnType: "float"
+    instructionFingerprint: "28F0392E3096442C9A2EBB70699C0EEA"
+  paths:
+  - testPathName: "fixedRemainderTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.floats.ArithmeticRemainder"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.floats.ArithmeticRemainder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "expectedResult"
+      fixed: true

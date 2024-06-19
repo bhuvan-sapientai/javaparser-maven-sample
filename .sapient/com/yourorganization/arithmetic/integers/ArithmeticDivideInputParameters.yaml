@@ -1,0 +1,54 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.integers.ArithmeticDivide"
+methods:
+- method:
+    name: "divide"
+    sourceCodeSignature: "int divide(int a, int b)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    - name: "b"
+      type: "int"
+    instructionFingerprint: "DBF0E377FC84EE8D168B745E9253AC51"
+  paths:
+  - testPathName: "divideTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticDivide"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticDivide"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int1"

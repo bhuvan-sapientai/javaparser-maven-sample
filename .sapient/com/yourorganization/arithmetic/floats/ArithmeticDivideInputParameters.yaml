@@ -1,0 +1,54 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.floats.ArithmeticDivide"
+methods:
+- method:
+    name: "divide"
+    sourceCodeSignature: "float divide(float a, float b)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    instructionFingerprint: "79A8601175E46D8E25D0CD8D6281339E"
+  paths:
+  - testPathName: "divideTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.floats.ArithmeticDivide"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.floats.ArithmeticDivide"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 4.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2.0
+      valueType: "float"
+      uuid: "float1"

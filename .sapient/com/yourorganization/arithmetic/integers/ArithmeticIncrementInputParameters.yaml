@@ -1,0 +1,246 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+methods:
+- method:
+    name: "increment"
+    sourceCodeSignature: "int increment(int a)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    instructionFingerprint: "66F6E17C745ADBE84447236668848F22"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "decrement"
+    sourceCodeSignature: "int decrement(int a)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    instructionFingerprint: "61A719C129695614CC5DB9631A6AFDD1"
+  paths:
+  - testPathName: "decrementTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "incrementLater"
+    sourceCodeSignature: "int incrementLater(int a)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    instructionFingerprint: "C16B7339CE5A0A9936E9AA119D26C4A7"
+  paths:
+  - testPathName: "incrementLaterWhenBEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 15
+      expression: "b == 0"
+      range: "(15,13)-(15,18)"
+      evaluatedAs: true
+  - testPathName: "incrementLaterWhenBNotEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+    branches:
+    - lineNumber: 15
+      expression: "b == 0"
+      range: "(15,13)-(15,18)"
+      evaluatedAs: false
+- method:
+    name: "decrementLater"
+    sourceCodeSignature: "int decrementLater(int a)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    instructionFingerprint: "41E4196BE6514C86780FAC11C0468E67"
+  paths:
+  - testPathName: "decrementLaterWhenBEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 24
+      expression: "b == 0"
+      range: "(24,13)-(24,18)"
+      evaluatedAs: true
+  - testPathName: "decrementLaterWhenBNotEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticIncrement"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -4
+      valueType: "int"
+      uuid: "int2"
+    branches:
+    - lineNumber: 24
+      expression: "b == 0"
+      range: "(24,13)-(24,18)"
+      evaluatedAs: false

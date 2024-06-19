@@ -1,0 +1,74 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.floats.ArithmeticNegate"
+methods:
+- method:
+    name: "negate"
+    sourceCodeSignature: "float negate(float a)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    instructionFingerprint: "BA4B7B51B15D97BED105BA23FC40E4E4"
+  paths:
+  - testPathName: "negateTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.floats.ArithmeticNegate"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.floats.ArithmeticNegate"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "float2"
+- method:
+    name: "negateFixed"
+    sourceCodeSignature: "float negateFixed()"
+    returnType: "float"
+    instructionFingerprint: "412E4BA0AC69332F3CB502A64AB330F2"
+  paths:
+  - testPathName: "negateFixedTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.floats.ArithmeticNegate"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.floats.ArithmeticNegate"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1.0
+      valueType: "float"
+      uuid: "expectedResult"
+      fixed: true

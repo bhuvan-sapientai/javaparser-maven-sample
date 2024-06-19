@@ -1,0 +1,9 @@
+projectRoot=/Users/bhuvan/beta-testing/javaparser-maven-sample/testModuleMaven
+                  moduleName=testModuleMaven
+                  testingFramework=JUnitPlatformTestFramework
+                  testLibraryVersion=5.9
+                  testJavaSrcDir=/Users/bhuvan/beta-testing/javaparser-maven-sample/testModuleMaven/src/test/java
+                  sourceBranch=sapientcli-testing
+                  targetBranch=master
+                  allClasses=false
+                  ciStatus=yaml-and-test-generation

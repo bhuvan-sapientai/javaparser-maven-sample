@@ -1,0 +1,54 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.doubles.ArithmeticMultiply"
+methods:
+- method:
+    name: "multiply"
+    sourceCodeSignature: "double multiply(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "B836FC31E8C4AD812C09B0C4C1DA38E9"
+  paths:
+  - testPathName: "multiplyTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticMultiply"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticMultiply"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "double1"

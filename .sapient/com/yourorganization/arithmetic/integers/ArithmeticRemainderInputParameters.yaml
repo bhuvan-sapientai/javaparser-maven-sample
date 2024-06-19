@@ -1,0 +1,84 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.integers.ArithmeticRemainder"
+methods:
+- method:
+    name: "getRemainder"
+    sourceCodeSignature: "int getRemainder(int a, int b)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    - name: "b"
+      type: "int"
+    instructionFingerprint: "0589C97E3558DB7389748FA0EF16C27A"
+  paths:
+  - testPathName: "getRemainderTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticRemainder"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticRemainder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "fixedRemainder"
+    sourceCodeSignature: "int fixedRemainder()"
+    returnType: "int"
+    instructionFingerprint: "F522193D537278B9043C8A25A73F4691"
+  paths:
+  - testPathName: "fixedRemainderTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticRemainder"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticRemainder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+      fixed: true

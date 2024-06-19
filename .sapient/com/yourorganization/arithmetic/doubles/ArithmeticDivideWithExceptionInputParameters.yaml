@@ -1,0 +1,113 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.doubles.ArithmeticDivideWithException"
+methods:
+- method:
+    name: "divide"
+    sourceCodeSignature: "double divide(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "BF0D492A5BF3A75B5308C23116520846"
+  paths:
+  - testPathName: "divideWhenBEquals0ThrowsIllegalArgumentException"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticDivideWithException"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticDivideWithException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Divisor can't be zero!"
+            valueType: "java.lang.String"
+            uuid: "uniqueUuid1"
+            fixed: true
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+      fixed: true
+    branches:
+    - lineNumber: 6
+      expression: "b == 0"
+      range: "(6,13)-(6,18)"
+      evaluatedAs: true
+  - testPathName: "divideWhenBNotEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticDivideWithException"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticDivideWithException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "double1"
+    branches:
+    - lineNumber: 6
+      expression: "b == 0"
+      range: "(6,13)-(6,18)"
+      evaluatedAs: false

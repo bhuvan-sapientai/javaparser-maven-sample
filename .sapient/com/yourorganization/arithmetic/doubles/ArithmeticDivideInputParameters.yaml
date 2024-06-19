@@ -1,0 +1,54 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.doubles.ArithmeticDivide"
+methods:
+- method:
+    name: "divide"
+    sourceCodeSignature: "double divide(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "15B6FBC4128F1C539625D2D3B952D56D"
+  paths:
+  - testPathName: "divideTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticDivide"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticDivide"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 4.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2.0
+      valueType: "double"
+      uuid: "double1"

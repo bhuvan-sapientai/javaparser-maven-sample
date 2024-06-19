@@ -1,0 +1,304 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.add.Add"
+methods:
+- method:
+    name: "add1"
+    sourceCodeSignature: "double add1(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "429CF92ED41514E6CD844606171ED30A"
+  paths:
+  - testPathName: "add1Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.add.Add"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.add.Add"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "add2"
+    sourceCodeSignature: "double add2(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "568FB570EF109C7AA4F9D8F7807575BC"
+  paths:
+  - testPathName: "add2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.add.Add"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.add.Add"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "add3"
+    sourceCodeSignature: "double add3(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "11F4D181139FA1D857056C67C3F3E1B4"
+  paths:
+  - testPathName: "add3WhenAGreaterThanB"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.add.Add"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.add.Add"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "double1"
+    branches:
+    - lineNumber: 14
+      expression: "a > b"
+      range: "(14,12)-(14,16)"
+      evaluatedAs: true
+  - testPathName: "add3WhenANotGreaterThanB"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.add.Add"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.add.Add"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "expectedResult"
+      fixed: true
+    branches:
+    - lineNumber: 14
+      expression: "a > b"
+      range: "(14,12)-(14,16)"
+      evaluatedAs: false
+- method:
+    name: "add4"
+    sourceCodeSignature: "double add4(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "595E4C2D206A66840FCD966DEAE4266B"
+  paths:
+  - testPathName: "add4WhenALessThanB"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.add.Add"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.add.Add"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -0.5
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -0.5
+      valueType: "double"
+      uuid: "double1"
+    branches:
+    - lineNumber: 21
+      expression: "a < b"
+      range: "(21,12)-(21,16)"
+      evaluatedAs: true
+  - testPathName: "add4WhenANotLessThanB"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.add.Add"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.add.Add"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "expectedResult"
+      fixed: true
+    branches:
+    - lineNumber: 21
+      expression: "a < b"
+      range: "(21,12)-(21,16)"
+      evaluatedAs: false

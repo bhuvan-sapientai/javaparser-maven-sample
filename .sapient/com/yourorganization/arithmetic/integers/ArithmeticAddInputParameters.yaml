@@ -1,0 +1,238 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "int add(int a, int b)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    - name: "b"
+      type: "int"
+    instructionFingerprint: "1F21F1E1960891D4762360B427DEC72A"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "add2"
+    sourceCodeSignature: "int add2(int a)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    instructionFingerprint: "9C3AFA3A3B762EDB36372749742DC250"
+  paths:
+  - testPathName: "add2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "add3"
+    sourceCodeSignature: "short add3(short a)"
+    returnType: "short"
+    parameters:
+    - name: "a"
+      type: "short"
+    instructionFingerprint: "799AC1EF3A84755E11FFF5EA3ED3D92F"
+  paths:
+  - testPathName: "add3Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "short"
+      originalValueType: "int"
+      uuid: "short1"
+- method:
+    name: "add4"
+    sourceCodeSignature: "short add4()"
+    returnType: "short"
+    instructionFingerprint: "978187422B515A2AE241701078800B38"
+  paths:
+  - testPathName: "add4Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 4
+      valueType: "short"
+      originalValueType: "int"
+      uuid: "expectedResult"
+      fixed: true
+- method:
+    name: "add5"
+    sourceCodeSignature: "byte add5(byte a)"
+    returnType: "byte"
+    parameters:
+    - name: "a"
+      type: "byte"
+    instructionFingerprint: "E3BEEBC44BA3DE7E7C553E7A28ADE3EC"
+  paths:
+  - testPathName: "add5Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "byte"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "byte"
+      originalValueType: "int"
+      uuid: "byte1"
+- method:
+    name: "add6"
+    sourceCodeSignature: "byte add6()"
+    returnType: "byte"
+    instructionFingerprint: "0CB79CE7CC9C01199176E2CDA2547C67"
+  paths:
+  - testPathName: "add6Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 4
+      valueType: "byte"
+      originalValueType: "int"
+      uuid: "expectedResult"
+      fixed: true

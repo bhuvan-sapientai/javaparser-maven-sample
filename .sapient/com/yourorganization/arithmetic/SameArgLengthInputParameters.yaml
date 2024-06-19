@@ -1,0 +1,48 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.SameArgLength"
+methods:
+- method:
+    name: "longValue"
+    sourceCodeSignature: "long longValue()"
+    returnType: "long"
+    instructionFingerprint: "78040D81B9F361B75B27027F42325F5E"
+  paths:
+  - testPathName: "longValueTest"
+    constructorSignature: "<init>(byte[],int) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.SameArgLength"
+        parameters:
+        - name: "buf"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "byte[]"
+            uuid: "buf"
+        - name: "offset"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "offset"
+      valueType: "com.yourorganization.arithmetic.SameArgLength"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+      fixed: true

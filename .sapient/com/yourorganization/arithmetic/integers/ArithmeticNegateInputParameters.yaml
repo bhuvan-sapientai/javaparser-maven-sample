@@ -1,0 +1,74 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.integers.ArithmeticNegate"
+methods:
+- method:
+    name: "negate"
+    sourceCodeSignature: "int negate(int a)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    instructionFingerprint: "B2AC4C77320ED7D06FD70314B77AD92F"
+  paths:
+  - testPathName: "negateTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticNegate"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticNegate"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "negateFixed"
+    sourceCodeSignature: "int negateFixed()"
+    returnType: "int"
+    instructionFingerprint: "A153E42B4FDDADE41CAF7C2C921038F4"
+  paths:
+  - testPathName: "negateFixedTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticNegate"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticNegate"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+      fixed: true

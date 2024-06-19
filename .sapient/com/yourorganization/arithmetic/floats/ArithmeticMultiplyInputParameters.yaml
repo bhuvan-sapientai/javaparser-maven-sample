@@ -1,0 +1,54 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.floats.ArithmeticMultiply"
+methods:
+- method:
+    name: "multiply"
+    sourceCodeSignature: "float multiply(float a, float b)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    instructionFingerprint: "7701A0607B22BFCEB328C0058FAA8A0E"
+  paths:
+  - testPathName: "multiplyTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.floats.ArithmeticMultiply"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.floats.ArithmeticMultiply"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "float1"

@@ -1,0 +1,123 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.bytes.ByteBoundary"
+methods:
+- method:
+    name: "translate"
+    sourceCodeSignature: "boolean translate(final byte codePoint, final Writer out)"
+    returnType: "boolean"
+    throwsExceptions:
+    - "java.io.IOException"
+    parameters:
+    - name: "codePoint"
+      type: "byte"
+    - name: "out"
+      type: "java.io.Writer"
+    instructionFingerprint: "226196268F359ED25971AF9F87D2ACDE"
+  paths:
+  - testPathName: "translateWhenCodePointLessThanBelow"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "INPUT"
+      name: "out"
+      valueUuid: "out"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bytes.ByteBoundary"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bytes.ByteBoundary"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "byte"
+      uuid: "codePoint"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.io.Writer"
+        method: "nullWriter"
+        methodParameters: []
+      valueType: "java.io.Writer"
+      uuid: "out"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+      fixed: true
+    branches:
+    - lineNumber: 22
+      expression: "between"
+      range: "(22,13)-(22,19)"
+      evaluatedAs: true
+    - lineNumber: 23
+      expression: "codePoint < below"
+      range: "(23,17)-(23,33)"
+      evaluatedAs: true
+  - testPathName: "translateWhenCodePointNotGreaterThanAbove"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "INPUT"
+      name: "out"
+      valueUuid: "out"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bytes.ByteBoundary"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bytes.ByteBoundary"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "codePoint"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.io.Writer"
+        method: "nullWriter"
+        methodParameters: []
+      valueType: "java.io.Writer"
+      uuid: "out"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+      fixed: true
+    branches:
+    - lineNumber: 22
+      expression: "between"
+      range: "(22,13)-(22,19)"
+      evaluatedAs: true
+    - lineNumber: 23
+      expression: "codePoint < below"
+      range: "(23,17)-(23,33)"
+      evaluatedAs: false
+    - lineNumber: 23
+      expression: "codePoint > above"
+      range: "(23,38)-(23,54)"
+      evaluatedAs: false

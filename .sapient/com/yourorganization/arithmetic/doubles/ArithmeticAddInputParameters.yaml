@@ -1,0 +1,125 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "double add(double a, double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "ACBB74ED073B0212DF421066D90D083C"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "add2"
+    sourceCodeSignature: "double add2(double a)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    instructionFingerprint: "46244B77EC043ECEBED2B063FD85FE64"
+  paths:
+  - testPathName: "add2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "add3"
+    sourceCodeSignature: "double add3()"
+    returnType: "double"
+    instructionFingerprint: "08B9B11C51CBB6DC45CCC5F1F596BF85"
+  paths:
+  - testPathName: "add3Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double2"
+    disabled: true
+    failureReason:
+      reason: "NUMBER_FORMAT_EXCEPTION"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticAdd"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double2"

@@ -1,0 +1,434 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "long add(long a, long b)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    - name: "b"
+      type: "long"
+    instructionFingerprint: "E7484E8ECE0A3ADEB5ADBF65CD4D6600"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "add2"
+    sourceCodeSignature: "long add2(long a)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    instructionFingerprint: "F75D762F5A89F31143C9440579426A56"
+  paths:
+  - testPathName: "add2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "divide"
+    sourceCodeSignature: "long divide(long a, long b)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    - name: "b"
+      type: "long"
+    instructionFingerprint: "2C3E0ADD06920CBCBC55BDD2DA6D0E37"
+  paths:
+  - testPathName: "divideTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "increment"
+    sourceCodeSignature: "long increment(long a)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    instructionFingerprint: "56244F878DDB6F1D5F731F250FDF37F8"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "multiply"
+    sourceCodeSignature: "long multiply(long a, long b)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    - name: "b"
+      type: "long"
+    instructionFingerprint: "5FA68F3ADF8C6BDF9CA5D04F3FBF417C"
+  paths:
+  - testPathName: "multiplyTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "negate"
+    sourceCodeSignature: "long negate(long a)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    instructionFingerprint: "19C9942B1B751054024FB9B05D58646C"
+  paths:
+  - testPathName: "negateTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "negateFixed"
+    sourceCodeSignature: "long negateFixed()"
+    returnType: "long"
+    instructionFingerprint: "B7FFF7D4D54F9ADBED938C1AB9FD2A65"
+  paths:
+  - testPathName: "negateFixedTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "long"
+      uuid: "expectedResult"
+      fixed: true
+- method:
+    name: "getRemainder"
+    sourceCodeSignature: "long getRemainder(long a, long b)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    - name: "b"
+      type: "long"
+    instructionFingerprint: "23E8A48AFE23206C7ADCFB9827792E2A"
+  paths:
+  - testPathName: "getRemainderTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "fixedRemainder"
+    sourceCodeSignature: "long fixedRemainder()"
+    returnType: "long"
+    instructionFingerprint: "F41D783E157C16E1B3B97C26835700B9"
+  paths:
+  - testPathName: "fixedRemainderTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "expectedResult"
+      fixed: true
+- method:
+    name: "subtract"
+    sourceCodeSignature: "long subtract(long a, long b)"
+    returnType: "long"
+    parameters:
+    - name: "a"
+      type: "long"
+    - name: "b"
+      type: "long"
+    instructionFingerprint: "860AF48053387A4327A264BB5E9FD779"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.longs.ArithmeticLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"

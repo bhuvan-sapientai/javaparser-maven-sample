@@ -1,0 +1,74 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.doubles.ArithmeticNegate"
+methods:
+- method:
+    name: "negate"
+    sourceCodeSignature: "double negate(double a)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    instructionFingerprint: "689589EB7281A6D2BD46882C5001AD1C"
+  paths:
+  - testPathName: "negateTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticNegate"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticNegate"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "negateFixed"
+    sourceCodeSignature: "double negateFixed()"
+    returnType: "double"
+    instructionFingerprint: "E9D500D5B70EE6D2500744C87440E36A"
+  paths:
+  - testPathName: "negateFixedTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.doubles.ArithmeticNegate"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.doubles.ArithmeticNegate"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1.0
+      valueType: "double"
+      uuid: "expectedResult"
+      fixed: true

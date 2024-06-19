@@ -1,0 +1,54 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.integers.ArithmeticSubtract"
+methods:
+- method:
+    name: "subtract"
+    sourceCodeSignature: "int subtract(int a, int b)"
+    returnType: "int"
+    parameters:
+    - name: "a"
+      type: "int"
+    - name: "b"
+      type: "int"
+    instructionFingerprint: "EAE5FB14218AE531C42ED1A2EA905F13"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.integers.ArithmeticSubtract"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.integers.ArithmeticSubtract"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"

@@ -1,0 +1,480 @@
+---
+targetClass:
+  fullClassName: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "BigInteger add(BigInteger a, BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "a"
+      type: "java.math.BigInteger"
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "57F3A3BDE177F8F83612E72E5F8C744E"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger"
+- method:
+    name: "add2"
+    sourceCodeSignature: "BigInteger add2(BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "4B16941C7FC7BBB99D08DC22C394A79E"
+  paths:
+  - testPathName: "add2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 11
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger2"
+- method:
+    name: "add3"
+    sourceCodeSignature: "BigInteger add3()"
+    returnType: "java.math.BigInteger"
+    instructionFingerprint: "89B4D24986A4B310A02F16B1448CE1A5"
+  paths:
+  - testPathName: "add3Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 11
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger3"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "BigInteger subtract(BigInteger a, BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "a"
+      type: "java.math.BigInteger"
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "2FFFE355425FE336D40DF730018D82AC"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger"
+- method:
+    name: "subtract2"
+    sourceCodeSignature: "BigInteger subtract2(BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "F32CA27E9FFB00B9162EF340EF118531"
+  paths:
+  - testPathName: "subtract2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 9
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger2"
+- method:
+    name: "subtract3"
+    sourceCodeSignature: "BigInteger subtract3()"
+    returnType: "java.math.BigInteger"
+    instructionFingerprint: "30B69420A3676ED3C3DEA4F170739F23"
+  paths:
+  - testPathName: "subtract3Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 9
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger3"
+- method:
+    name: "multiply"
+    sourceCodeSignature: "BigInteger multiply(BigInteger a, BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "a"
+      type: "java.math.BigInteger"
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "49A05CB2DA9DA708D0165A86F0CA53C4"
+  paths:
+  - testPathName: "multiplyTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger"
+- method:
+    name: "multiply2"
+    sourceCodeSignature: "BigInteger multiply2(BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "D648FE3BBEA2D2B32C9AC9A1432F6563"
+  paths:
+  - testPathName: "multiply2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 10
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger2"
+- method:
+    name: "multiply3"
+    sourceCodeSignature: "BigInteger multiply3()"
+    returnType: "java.math.BigInteger"
+    instructionFingerprint: "395FFC60885A64D8829C105410C9B2C4"
+  paths:
+  - testPathName: "multiply3Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 10
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger3"
+- method:
+    name: "divide"
+    sourceCodeSignature: "BigInteger divide(BigInteger a, BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "a"
+      type: "java.math.BigInteger"
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "FBDB2625CD713706FF63E9EB85894B3F"
+  paths:
+  - testPathName: "divideTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger"
+- method:
+    name: "divide2"
+    sourceCodeSignature: "BigInteger divide2(BigInteger b)"
+    returnType: "java.math.BigInteger"
+    parameters:
+    - name: "b"
+      type: "java.math.BigInteger"
+    instructionFingerprint: "1B2E2930C4FDB7584B7B9768260CD7A1"
+  paths:
+  - testPathName: "divide2Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.math.BigInteger"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 10
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger2"
+- method:
+    name: "divide3"
+    sourceCodeSignature: "BigInteger divide3()"
+    returnType: "java.math.BigInteger"
+    instructionFingerprint: "148ED082383E539249AAFA1A89ACA305"
+  paths:
+  - testPathName: "divide3Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "bigInteger3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+        parameters: []
+      valueType: "com.yourorganization.arithmetic.bigInteger.BigIntegerArithmeticOperations"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 10
+      valueType: "java.math.BigInteger"
+      uuid: "bigInteger3"
